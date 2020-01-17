@@ -25,5 +25,15 @@ The project was implemented in Python 3.7.3.
 
 ### General Summary
 
+![summary](https://user-images.githubusercontent.com/44115595/72586525-b8dec800-38b7-11ea-9e53-acd501c38420.PNG)
 
 ### Insights and Recommendations
+
+Based on the regression analysis, the best model (AU-ROC: ~0.72) to predict user engagement was using both the image captions and the image labels. 
+* The Instagram caption does bear some weight in determining engagement, but is not necessarily sufficient, as captions may be slightly unrelated to the actual image. Combining these captions with the labels from Google Cloud Vision, we are able to better predict engagement, as Google Vision has already been exposed to a variety of images that can then be used to determine the labels.
+
+Based on LDA, we can see that many of the posts fall under the main category of Nature. There are many overlaps within these topics, given that most are related to nature, landscapes and animals. People expect these photos from NatGeo, and these photos are probably the reason they are actively following the account. NatGeo is first and foremost known for their nature based magazines, which have been a household name since 1888. The Instagram account is an extension of this brand image they have created in homes, and thus, it is essential to maintain that on different platforms as well. However, there is also room to engage with a new userbase through Instagram, which is why we recommend slowly starting to add in a mix of new images corresponding to other topics.
+* The high engagement posts mostly relate to wildlife and atmospheric phenomena. NatGeo can try increasing the frequency of these topics to drive engagement
+* The low engagement posts consists mainly of the most commonly occuring theme - nature. Though these are frequent, these posts don't seem to garner much enthusiasm
+
+One thing that could be useful to monitor is how the trends in engagement topics change based on season. For example, more individuals might engage with travel related images prior to planning a trip, which would cause an increase in certain topic label engagement. They may also want to see more images of people/human elements of emotion during the holidays, and pictures of sunny warm places in the winter. Looking at how engagement changes by season in general could be a great way to drive engagement by posting more targeted images at certain times of the year.
